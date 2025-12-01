@@ -5,6 +5,7 @@ body{
     align-items: center;
     height: 100vh;
     border: 5px solid white;
+    color:white;
 
 }
 
@@ -18,9 +19,23 @@ body{
 
 }
 
-
 .mc{
     height:250px;
     width:850px;
     border: 5px solid white;
+}
+
+#taskInput{
+    font-size: 30px;
+    height: 100px;
+    width: 200px;
+    border: 2px solid grey;
+    border-radius:10px;
+    background-color: black;
+    color:rgb(139, 136, 136);
+}
+
+#addBtn{
+    border: 2px solid grey;
+
 }
