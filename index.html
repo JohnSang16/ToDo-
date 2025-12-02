@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -9,7 +11,7 @@
 </head>
 <body>
     <div class = "container">
-        <h2>TODO APP</h2>
+        <h1>TODO APP</h1>
     <div class = "mc">
         <form>
         <input type="text", id ="taskInput", value = "write anything and hit enter to add", autocomplete = "off" >
@@ -18,11 +20,19 @@
         <ul id = "todo-list">
             <li class="todo">
                 <input type="checkbox" id="todo-1">
-                <label for="todo-1" class="custom-checkbox"></label>
+                <label for="todo-1" class="custom-checkbox">
+                    <span class="material-symbols-outlined">check</span>
+                </label>
+                <label for="todo-1" class="todo-text">
+                    webdev project with html, css, and js
+                </label>
+                    <button id = "deleteBtn">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+
+
             </li>
         </ul>
-        <button id = "deleteBtn">Delete last</button>
-        <button id = "clearBtn">Clear</button>
     </div>
 </div>
     

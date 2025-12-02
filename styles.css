@@ -17,6 +17,15 @@ html{
     color: var(--text-color);
 }
 
+h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--accent-color);
+}
 body{
     background: var(--background);
     display: flex;
@@ -32,33 +41,29 @@ body{
     flex-direction: column;
     align-items: center;
     font-size: 50px;
-    font-family:  "Times New Roman", serif;
-    color:rgb(88, 218, 179);
+    gap: 10px;
+    
 
 }
 
-.mc{
-    height:250px;
-    width:850px;
-}
-h2{
-    margin: 0;
-    padding: 0;
-}
 #taskInput{
-    font-size: 20px;
+    box-sizing: border-box;
+    font: inherit;
     margin: 0;
-    padding: 0;
-    height: 60px;
+    padding: 12px 20px;
     width:  100%;
-    border: 2px solid grey;
+    border: 2px solid var(--secondary-color);
     border-radius:1000px;
-    background-color: black;
-    color:rgb(139, 136, 136);
+    background: none;
+    color:var(--text-color);
+    caret-color: var(--accent-color);
 }
 
+#taskInput:focus{
+    outline:none;
+}
 #addBtn{
-    top:0;
+    top: 0;
     right: 0;
     position:absolute;
 
@@ -75,4 +80,8 @@ h2{
 
 form{
     position: relative;
+}
+
+#todo-1{
+    display:none;
 }

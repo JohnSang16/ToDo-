@@ -2,7 +2,6 @@ const input = document.querySelector('input[type="text"]');
 const ul = document.querySelector('ul');
 const addButton = document.querySelector('#addBtn');
 const deleteButton = document.querySelector('#deleteBtn');
-const clearButton = document.querySelector('#clearBtn');
 
 addButton.addEventListener('click', ()=> {
 const content = document.createElement('li');
@@ -34,8 +33,5 @@ if(lastInput){
     }
 })
 
-clearButton.addEventListener('click', ()=>{
-   document.querySelector('ul').innerHTML = "";
 
-})
 
