@@ -110,3 +110,28 @@ form{
 .deletebtn:hover svg{
     fill:#ff0033;
 }
+
+.custom-cb{
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    min-height: 20px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked ~ .custom-cb {
+    background-color: var(--accent-color);
+}
+input[type="checkbox"]:checked ~ .custom-cb svg{
+    fill: var(--primary-color);
+}
+input[type="checkbox"]:checked ~ .todo-text{
+    text-decoration: line-through;
+    color: var(--secondary-color);
+}
+input[type="checkbox"]{
+    display: none;
+}
