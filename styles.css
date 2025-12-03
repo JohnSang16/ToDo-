@@ -104,5 +104,9 @@ form{
     justify-content: center;
 }
 
-
-
+.deletebtn svg{
+    transition: 200ms ease;
+}
+.deletebtn:hover svg{
+    fill:#ff0033;
+}
