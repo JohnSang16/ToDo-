@@ -79,3 +79,17 @@ form{
     position: relative;
 }
 
+.todo{
+    background-color: var(--primary-color);
+    padding: 0 16px;
+    margin-bottom: 10px;
+    border-radius: 15;
+    display: flex;
+    align-items: center;
+}
+
+.todo .todo-text{
+    padding: 15px;
+    padding-right: 0;
+    flex-grow: 1;
+}
